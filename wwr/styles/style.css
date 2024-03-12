@@ -122,7 +122,7 @@ nav a:hover,
 
 h4,
 .msg h2 {
-    color: var(--primary-color); /* Changed */
+    color: white; /* Changed */
 }
 
 #hero-msg h4 {
