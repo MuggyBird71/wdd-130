@@ -2,57 +2,84 @@
 /* If you chose a different font for headlines, include another @import statement here */
 
 body {
-    background-color: #fcfbfb;
+    background-color: white;
     font-family: 'Raleway', Arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
 
-h2 {
-    margin: 0;
+header {
+    background-color: #eb9d6d;
 }
 
-/* Additional selectors and their styles, including the font-family for headlines if needed */
-.home-title {
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
-    font-size: 2em;
-    margin-top: 10px;
+h2, .msg h2 {
+    margin: 0;
+    color: #114b5f;
+}
+
+h4 {
+    color: #114b5f;
+}
+
+nav a {
+    text-align: center;
+    color: #114b5f;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #95dce5;
+    color: #eb9d6d;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#background {
+    height: 725px;
+    background-color: #95dce5;
+}
+
+#hero-msg h1, #hero-msg h4, .button-box, main section {
+    text-align: center;
+}
+
+#hero-img, .logo, .icon, .card-img {
+    width: 100%;
+}
+
+.button-box {
+    text-align: center;
 }
 
 .book, .join {
+    background-color: #95dce5;
+    color: #114b5f;
+    text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    /* Add background color and text color as per your design */
+}
+
+.book:hover, .join:hover {
+    color: #eb9d6d;
 }
 
 .msg p {
     font-size: 0.8em;
     line-height: 1.5em;
     padding-bottom: 15px;
+    color: #114b5f;
 }
 
 .msg {
+    background-color: #eb9d6d;
     line-height: 1.5em;
-    padding: 35px;
-    /* Add background color as per your design */
-}
-
-/* Reset styles */
-nav a, .icon, #logo_link, footer, footer .social img {
-    padding: 0;
-}
-
-/* Adding padding as specified */
-#logo_link {
-    padding-top: 5px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
     padding: 35px;
 }
 
@@ -61,19 +88,34 @@ nav a {
 }
 
 footer {
+    background-color: #eb9d6d;
     padding: 25px 50px;
-    background: #ddd; /* You can change the color according to your site plan */
 }
 
-footer .social img {
-    width: 24px;
-    height: auto;
-    padding-top: 15px;
+footer h3 {
+    color: #114b5f;
 }
 
-/* Adding margins as specified */
+footer a {
+    color: #114b5f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #eb9d6d;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
 .rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
+    text-align: center;
 }
 
 footer {
@@ -81,10 +123,6 @@ footer {
 }
 
 /* Adding borders, border-radius and box-sizing as specified */
-.book, .join {
-    border-radius: 5px;
-}
-
 .card-img {
     border: 10px solid #000; /* Replace #000 with your chosen color */
 }
