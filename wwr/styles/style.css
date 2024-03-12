@@ -9,16 +9,11 @@ body {
     padding: 0;
 }
 
-header {
+header, footer {
     background-color: #eb9d6d;
 }
 
-h2, .msg h2 {
-    margin: 0;
-    color: #114b5f;
-}
-
-h4 {
+h2, .msg h2, h4, .home-title {
     color: #114b5f;
 }
 
@@ -34,14 +29,11 @@ nav a:hover {
     color: #eb9d6d;
 }
 
-#content {
+#content, #background {
     max-width: 1600px;
     margin: 0 auto;
-}
-
-#background {
-    height: 725px;
-    background-color: #95dce5;
+    height: 725px; /* For #background */
+    background-color: #95dce5; /* For #background */
 }
 
 #hero-msg h1, #hero-msg h4, .button-box, main section {
@@ -50,6 +42,7 @@ nav a:hover {
 
 #hero-img, .logo, .icon, .card-img {
     width: 100%;
+    padding-top: 10px; /* Specific for .icon */
 }
 
 .button-box {
@@ -81,15 +74,6 @@ nav a:hover {
     background-color: #eb9d6d;
     line-height: 1.5em;
     padding: 35px;
-}
-
-.icon {
-    padding-top: 10px;
-}
-
-footer {
-    background-color: #eb9d6d;
-    padding: 25px 50px;
 }
 
 footer h3 {
@@ -124,9 +108,10 @@ footer {
 
 /* Adding borders, border-radius and box-sizing as specified */
 .card-img {
-    border: 10px solid #000; /* Replace #000 with your chosen color */
+    border: 10px solid #000; /* You can replace #000 with your chosen color */
+    box-sizing: border-box; /* Applies to main section images as well */
 }
 
-main section img {
-    box-sizing: border-box;
+.logo, .icon {
+    width: 80px; /* Overrides the 100% width for specific elements */
 }
