@@ -122,10 +122,15 @@ nav a:hover,
 
 h4,
 .msg h2 {
-    color: white; /* Changed */
+    color: var(--primary-color); /* Changed */
 }
 
 #hero-msg h4 {
+    text-align: center;
+    color: white;
+}
+
+#hero-msg h1 {
     text-align: center;
     color: white;
 }
