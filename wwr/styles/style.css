@@ -283,16 +283,19 @@ footer .social img {
 .aboutus-grid .question h3 {
     font-size: 16px;
     padding: 10px;
+    color: aliceblue
 }
 
 .aboutus-grid .question p {
     font-size: 14px;
     padding: 10px;
+    color:aliceblue
 }
 
 .aboutus-grid .question li {
     font-size: 14px;
     padding: 5px;
+    color: aliceblue
 }
 
 @media screen and (max-width: 900px) {
